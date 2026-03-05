@@ -19,3 +19,7 @@ def test_balance_negative_result():
 
 def test_balance_all_negative():
     assert calculate_balance([-10, -20, -30]) == -60
+
+
+def test_balance_with_zero():
+    assert calculate_balance([0, 100, -50, 0]) == 50
