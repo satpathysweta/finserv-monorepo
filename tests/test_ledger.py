@@ -11,3 +11,7 @@ def test_balance_basic():
 
 def test_balance_basic():
     assert calculate_balance([100, -50]) == 50
+
+
+def test_balance_empty_list():
+    assert calculate_balance([]) == 0
