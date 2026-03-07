@@ -9,8 +9,11 @@ from services.ledger.ledger import calculate_balance
 def test_balance_basic():
     assert calculate_balance([100, -50]) == 50
 
-def test_balance_basic():
-    assert calculate_balance([100, -50]) == 50
+
+
+
+def test_balance_empty_list():
+    assert calculate_balance([]) == 0
 
 
 def test_balance_negative_result():
